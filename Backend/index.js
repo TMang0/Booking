@@ -9,7 +9,7 @@ admin.initializeApp({
 const db = admin.firestore();
 
 // Creacion de un Usuario
-db.collection("User").add({
+/*db.collection("User").add({
     Name:"Juan Lopez",
     DNI: 12345,
     Cel: 300345777,
@@ -22,4 +22,34 @@ db.collection("User").add({
 })
 .catch((error) => {
     console.error("Error al crear documento: ", error);
-});
+}); */
+
+// Leer un Usuario
+/*db.collection("User").doc("sjXBy3qomk1aBofKbUh5").get()
+.then((doc) => {
+    if(doc.exists){
+        console.log(doc.data());
+    } else{
+        console.log("Documento no existe");
+    }
+})
+.catch((error) => {
+    console.error("Error al leer documento: ", error);
+}); */
+
+//Actualizar un Usuario
+/*db.collection("User").doc("sjXBy3qomk1aBofKbUh5").update({
+    Name:"Juan Camilo Lopez",
+    DNI: 12345,
+    Cel: 300345777,
+    ContactLink: "JuanClopez@gmail.com",
+    Photo: "www.photosface.com",
+    Tables: [{},{}]
+})
+.then(() => {
+    console.log("Documento Actualizado Correctamente!");
+})
+.catch((error) => {
+    console.error("Error al Actualizar documento: ", error);
+}); */
+
