@@ -53,3 +53,9 @@ const db = admin.firestore();
     console.error("Error al Actualizar documento: ", error);
 }); */
 
+//Para eliminar un Usuario por id
+/*db.collection("User").doc("sjXBy3qomk1aBofKbUh5").delete().then(() => {
+    console.log("Document successfully deleted!");
+}).catch((error) => {
+    console.error("Error removing document: ", error);
+}); */
