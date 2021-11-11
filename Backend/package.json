@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"nodemon index.js",
-    "star":"node index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "author": "grupo 6",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
     "firebase-admin": "^10.0.0"
   }
 }
