@@ -37,8 +37,42 @@ function addUser(user, callback){
     })
 }
 
+function updateUserTotally(uid, user, callback){
+    return db.collection('User').doc(uid).set(user)
+    .then(()=>{
+        callback("Success")
+    })
+    .catch((err)=>{
+        callback('Error to Update User ${err}');
+    })
+}
+
+function updateUserPartial(uid, user, callback){
+    return db.collection('User'). doc(uid). update(user)
+    .then(()=>{
+        callback("Success")
+    })
+    .catch((err)=>{
+        callback('Error to Update User ${err}');
+    })
+}
+
+function deleteUser(uid, callback){
+    return db.collection('User').doc(uid).delete()
+    .then(()=>{
+        callback("Success")
+    })
+    .catch((err)=>{
+        callback('Error to Delete User ${err}');
+    })
+}
+
 module.exports ={
     getUsers,
     getUser,
-    addUser
+    addUser,
+    updateUserTotally,
+    updateUserPartial,
+    deleteUser
+
 }
