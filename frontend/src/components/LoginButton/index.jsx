@@ -32,7 +32,8 @@ const uiConfig = {
       const obj = {
         "id": authResult.user.uid,
         "email": authResult.user.email,
-        "picture": authResult.user.photoURL
+        "picture": authResult.user.photoURL,
+        "name": authResult.user.displayName
 
       }
       localStorage.setItem('data', JSON.stringify(obj));

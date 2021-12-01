@@ -4,6 +4,10 @@ import App from "../../App";
 import Hero from "../Hero";
 import Home from "../Home";
 
+const logOut = () => {
+  localStorage.removeItem("data");
+};
+
 const NavContainer = () =>{
   return(
 
@@ -13,10 +17,11 @@ const NavContainer = () =>{
       <img src="/restaurant-svgrepo-com.svg" alt=""width="70" height="40"/>
       </Link>
       <Link href="/">Inicio</Link>
-      <Link href="/booking">Haz una reserva</Link>
-      <Link href="/Profile">Actualizar datos</Link>
-      <Link href="/contact">Contactanos</Link>
+      <Link href="/Booking">Haz una reserva</Link>
+      <Link href="/Profile">Perfil</Link>
+      <Link href="/Contact">Contactanos</Link>
       </ContainerNav>
+      <Link style={{marginRight:"30px"}} href="/" onClick={logOut}>LogOut</Link>
     </NavDiv>
 
   );

@@ -1,20 +1,11 @@
 import React from 'react'
+import NavContainer from '../navbar'
 import { ContainerNav, NavDiv, Link } from '../navbar/styles'
 
 function Contact() {
   return (
     <div>
-      <NavDiv>
-      <ContainerNav>
-      <Link href="#">
-      <img src="/restaurant-svgrepo-com.svg" alt=""width="70" height="40"/>
-      </Link>
-      <Link href="/">Inicio</Link>
-      <Link href="/booking">Haz una reserva</Link>
-      <Link href="/Profile">Actualizar datos</Link>
-      <Link href="/contact">Contactanos</Link>
-      </ContainerNav>
-    </NavDiv>
+      <NavContainer/>
     </div>
   )
 }

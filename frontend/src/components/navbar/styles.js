@@ -24,7 +24,7 @@ top: 0;
 export const ContainerNav = styled.div`
 display: flex;
 align-items: center;
-justify-content: space-around;
+justify-content: space-between;
 width: 50%;
 `
 export const Link = styled.a`

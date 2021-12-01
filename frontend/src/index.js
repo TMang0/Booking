@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import NavContainer from './components/navbar';
 import Hero from './components/Hero';
 
+
 ReactDOM.render(
   <React.StrictMode>
     <App/>
