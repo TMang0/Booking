@@ -8,7 +8,7 @@ Base de datos: Firebase.
 
 Backend: Node.
 
-Frontend: ReactJS
+Frontend: ReactJS.
 
 El proyecto fue realizado entre Deymer y yo. Por eso tengo el repositorio Forkeado.
 
